@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operacione Basicas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <body bgcolor="#000000" topmargin="50", leftmargin="30">
+        <center>
+        <body style="color: rgb(255, 255, 255)"><font face="times"SIZE="8"><b>Buen Dia,
+            <br><center>Vamos a realizar operaciones basicas ingresando dos números</b></FONT>
+        </CENTER>
+    </body>
+
+        <br>       
+        <hr>
+        <br>
+        
+        <script>
+            function algoritmo(){
+                let a, b, division, multiplicacion, resta;
+                let suma;
+                a = parseFloat (document.formulario1.a.value);
+                b = parseFloat (document.formulario1.b.value);
+                suma=a+b;
+                resta=a-b;
+                multiplicacion=a*b;
+                if(b==0)
+                division=0;
+                else
+                division=a/b;
+                document.formulario1.division.value = division;
+                document.formulario1.multiplicacion.value = multiplicacion;
+                document.formulario1.resta.value = resta;
+                document.formulario1.suma.value = suma;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form name="formulario1">
+            <table style="text-align: left; margin-left: auto; margin-right: auto;">
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <label for="a"style="font-size: xx-large; color: rgb(255, 255, 255);">
+                                Por favor ingrese el primer número: </label>
+                        </td>
+
+                        <td>
+                            <input style="background-color: rgb(187, 185, 185);font-size: large; text-align: center;" 
+                            name="a" required="required" step="1" type="number"/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="a"style="font-size: xx-large; color: rgb(255, 255, 255);">
+                                Por favor ingrese el segundo número: </label>
+                        </td>
+                        <td>
+                            <input style="background-color: rgb(187, 185, 185);font-size: large; text-align: center;" 
+                            name="b" required="required" step="1" type="number" />
+                        </td>
+                    </tr>
+                    
+                    <tr align="center">
+                        <td colspan="2" rowspan="1">
+                            <br>
+                            <input style="font-size: large; background-color: rgb(187, 185, 185);" value="Realizar operacion" type="button" onclick="algoritmo();" />
+                            <input style="font-size: large; background-color: rgb(187, 185, 185);" type="reset" />                        
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label style="font-size: x-large; color: rgb(255, 255, 255);" for="suma">Resultado de la suma:</label>
+                        </td>
+                        <td>
+                            <input style="background-color: rgb(187, 185, 185);font-size: large; text-align: center;"
+                            name="suma" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label style="font-size: x-large; color: rgb(255, 255, 255);" for="resta">Resultado de la resta:</label>
+                        </td>
+                        <td>
+                            <input style="background-color: rgb(187, 185, 185);font-size: large; text-align: center;"
+                            name="resta" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label style="font-size: x-large; color: rgb(255, 255, 255);" for="multiplicacion">Resultado de la multiplicacion:</label>
+                        </td>
+                        <td>
+                            <input style="background-color: rgb(187, 185, 185);font-size: large; text-align: center;"
+                            name="multiplicacion" step="0.000001" type="number" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label style="font-size: x-large; color: rgb(255, 255, 255);" for="division">Resultado de la division:</label>
+                        </td>
+                        <td>
+                            <input style="background-color: rgb(187, 185, 185);font-size: large; text-align: center;"
+                            name="division" step="0.000001" type="number" />
+                        </td>
+                    </tr>           
+
+                </tbody>
+            </table>
+        </form>
+    </font>
+    </center>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <center>
+        <body style="color: rgb(255, 255, 255)"><font face="times"SIZE="8"><b>Gracias,
+            <br><center>Espero tengas un buen dia</b></FONT>
+        </CENTER>
+</body>
+
+</html>
